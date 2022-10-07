@@ -21,9 +21,9 @@
                     {{$erro}}
                     @endif
                 </p>
-                <p>メールアドレス</p>
+                <p class="p">メールアドレス</p>
                 <input type="email" name="mail" value="" required="メールアドレスをご入力ください。">
-                <p>生年月日</p>
+                <p class="p">生年月日</p>
                 <input type="date" name="birth" value="" required="生年月日をご入力ください。">
                 <input type="submit" value="送信">
             </form>

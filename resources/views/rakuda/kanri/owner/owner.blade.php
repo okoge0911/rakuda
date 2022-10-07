@@ -29,7 +29,7 @@
             </form>
 
         <div class="new_mansion">
-            <a href="/owner_new">＋新規オーナー作成</a>
+            <a class="a" href="/owner_new">＋新規オーナー作成</a>
         </div>
         <div class="mansion_list">
             <table>

@@ -18,7 +18,7 @@
     <main>
         <div class="kanriheader">
             <a class="kanriimg" href="{{url('/owner_home')}}"><img class="logo_header" src="{{ asset('assets/images/47441.png')}}"></a>
-            <p class="yourlife">〜 ************* 〜</p>
+        
             <a class="kanrilogout" href="/loguot">ログアウト</a>
         </div>
     </main>

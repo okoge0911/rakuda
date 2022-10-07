@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta  name=”viewport” content=”width=device-width,initial-scale=1.0″>
     <title>construction_list</title>
 </head>
 <body>
@@ -25,7 +26,7 @@
                     <th>{{$key->day}}</th>
                     <th>{{$key->name}}</th>
                     <th>{{$key->point}}</th>
-                    <th><a href="/report_pdf/{{$key->id}}">確認</a></th>
+                    <th><a class="a" href="/report_pdf/{{$key->id}}">確認</a></th>
                 </tr>
                 @endforeach
             </table>

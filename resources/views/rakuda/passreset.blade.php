@@ -21,10 +21,10 @@
                     @endif
                 </p>
                 <input type="hidden" name="id" value="{{$reset_id}}">
-                <p>新しいパスワード</p>
+                <p class="p">新しいパスワード</p>
                 <input type="password" name="pass1" value="" required="新しいパスワードをご入力ください。">
-                <p>確認用パスワード</p>
-                <p>※新しいパスワードと同じにしてください。※</p>
+                <p class="p">確認用パスワード</p>
+                <p class="p">※新しいパスワードと同じにしてください。※</p>
                 <input type="password" name="pass2" value="" required="確認用パスワードをご入力ください。">
                 <input type="submit" value="送信">
             </form>

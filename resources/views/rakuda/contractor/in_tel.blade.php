@@ -31,7 +31,6 @@
                 <p>{{$query->mail_inner}}</p>
             </div>
         </div>
-        <a class="home_con" href="{{url('/rent')}}">戻る</a>
     </main>
     <footer>
         @include('rakuda.footer')

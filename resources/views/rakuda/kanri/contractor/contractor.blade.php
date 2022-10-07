@@ -28,7 +28,7 @@
             </form>
        
         <div class="new_mansion">
-            <a href="/contractor_new">+新規契約者作成</a>
+            <a class="a" href="/contractor_new">+新規契約者作成</a>
         </div>
         <div class="mansion_list">
             <table>

@@ -31,7 +31,7 @@
         </form>
 
         <div class="new_mansion">
-            <a href="{{ url('/mansion_new') }}">＋新規物件作成</a>
+            <a class="a" href="{{ url('/mansion_new') }}">＋新規物件作成</a>
         </div>
         <div class="mansion_list">
             <table border="1">

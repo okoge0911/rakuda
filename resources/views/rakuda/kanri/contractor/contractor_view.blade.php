@@ -13,27 +13,93 @@
     <main id="main">
         <h2>契約者様情報詳細</h2>
         <div class="view_inner">
-            <p>建物ID :{{$date->mansion_id}}</p>
-            <p>契約者ID :{{$date->id}}</p>
-            <p>部屋番号 :{{$date->roomnumber}}</p>
-            <p>契約者名 :{{$date->name}}</p>
-            <p>生年月日 :{{$date->birth}}</p>
-            <p>性別 :{{$date->gender}}</p>
-            <p>住所 :{{$date->adress}}</p>
-            <p>連絡先　TEL :{{$date->tel}}</p>
-            <p>連絡先 メールアドレス:{{$date->mail}}</p>
-            <p>勤務先 :{{$date->work}}</p>
-            <p>勤務先住所 :{{$date->work_adress}}</p>
-            <p>勤務先:TEL :{{$date->work_tel}}</p>
-            <p>連帯保証人・緊急連絡先 :{{$date->help}}</p>
-            <p>連帯保証人/緊急連絡先名 :{{$date->help_name}}</p>
-            <p>続柄 :{{$date->help_position}}</p>
-            <p>連帯保証人/緊急連絡先:TEL :{{$date->help_tel}}</p>
-            <p>パスワード設定 :{{$date->password}}</p>
-            <p>その他 :@if(!empty($date->body))
+<table>
+    <tr>
+        <th>項目</th>
+        <th>詳細</th>
+    </tr>
+    <tr>
+        <th>建物ID</th>
+        <td>{{$date->mansion_id}}</td>
+    </tr>
+    <tr>
+        <th>契約者ID</th>
+        <td>{{$date->id}}</td>
+    </tr>
+    <tr>
+        <th>部屋番号</th>
+        <td>{{$date->roomnumber}}</td>
+    </tr>
+    <tr>
+        <th>契約者名</th>
+        <td>{{$date->name}}</td>
+    </tr>
+    <tr>
+        <th>生年月日</th>
+        <td>{{$date->birth}}</td>
+    </tr>
+    <tr>
+        <th>性別</th>
+        <td>{{$date->gender}}</td>
+    </tr>
+    <tr>
+        <th>住所</th>
+        <td>{{$date->adress}}</td>
+    </tr>
+    <tr>
+        <th>連絡先　TEL</th>
+        <td>{{$date->tel}}</td>
+    </tr>
+    <tr>
+        <th>連絡先 メールアドレス</th>
+        <td>{{$date->mail}}</td>
+    </tr>
+    <tr>
+        <th>勤務先</th>
+        <td>{{$date->work}}</td>
+    </tr>
+    <tr>
+        <th>勤務先住所</th>
+        <td>{{$date->work_adress}}</td>
+    </tr>
+    <tr>
+        <th>勤務先:TEL</th>
+        <td>{{$date->work_tel}}</td>
+    </tr>
+    <tr>
+         <th>連帯保証人・緊急連絡先</th>
+        <td>{{$date->help}}</td>
+    </tr>
+    <tr>
+        <th>連帯保証人/緊急連絡先名</th>
+        <td>{{$date->help_name}}</td>
+    </tr>
+    <tr>
+        <th>続柄</th>
+        <td>{{$date->help_position}}</td>
+    </tr>
+    <tr> 
+        <th>連帯保証人/緊急連絡先:TEL</th>
+        <td>{{$date->help_tel}}</td>
+    </tr>
+    <tr>
+        <th>パスワード設定 </th>
+        <td>{{$date->password}}</td>
+    </tr>
+    <tr>
+        <th>その他</th>
+        <td>@if(!empty($date->body))
                 {{$date->body}}
-                @endif</p>
-            <p>身分証等:@if($date->PDF)<a class="mibun" href ="{{asset('/storage/'.$date->PDF)}}">添付資料の確認 @else 添付資料なし@endif</a></p>
+                @endif</td>
+    </tr>
+    <tr>
+        <th>身分証等</th>
+        <td>@if($date->PDF)<a class="mibun" href ="{{asset('/storage/'.$date->PDF)}}">添付資料の確認 @else 添付資料なし@endif</td>
+    </tr>
+
+
+</table>
+           
        </div>
        <div class="view_btn">  
          

@@ -26,9 +26,6 @@
                 <a href="/inphoto/{{$info->id}}">入居時写真登録</a>
             </div>
         </div>
-        
-        <a class="home_con" href="{{url('/rent')}}">戻る</a>
-     
     </main>
     <footer>
     @include('rakuda.footer')
