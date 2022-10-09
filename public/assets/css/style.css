@@ -1,0 +1,931 @@
+@charset "UTF-8";
+/* reset */
+body, h1, h2, h3, h4, h5, h6, p, address,
+ul, ol, li, dl, dt, dd, img, form, table, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 100%;
+	text-align: left;
+	list-style-type: none;
+	border-collapse: collapse;
+}
+
+textarea { font-size: 100%; vertical-align:middle;}
+img { border-style: none; display: block; }
+hr { display: none; }
+em{font-style: normal}
+input{line-height:auto;vertical-align:middle;}
+strong.more{color:#c30}
+a{text-decoration: none;}
+
+
+body {
+	font-family:'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+	/* background-image: url('/assets/images/Pin by Charlene Richella on My Saves _ Photo collage template, Vintage poster design, Photo wall collage.jpeg'); */
+    background-color: rgb(234, 234, 234); 
+	width: 100vw;
+}
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+a{
+    color: black;
+}
+/* a:link, a:visited, a:hover, a:active {
+    color: 	#000080;
+  } */
+/*ヘッダー*/
+header{
+    background-color: rgb(158, 158, 158);
+    /* opacity: 0.6; */
+}
+.header{
+    width: 80%;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+ 
+    
+}
+.logout{
+   margin-top:3%
+}
+.header a{
+   width: 10%;
+   color:rgb(228, 228, 228)
+}
+.header img{
+    width: 8%;
+}
+.img{
+    width: 100%;
+}
+.img img{
+    width: 100%;
+}
+.header p{
+    font-family: 'Noto Serif JP', serif;
+    font-size: 20px;
+    padding-top: 2%;
+    margin-right:58%;
+    /* border-bottom: 1px solid springgreen; */
+}
+
+/* 管理用のヘッダー */
+.kanriheader{
+    width: 80%;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+     
+}
+.kanrilogout{
+    width: 20%;
+    text-align: center;
+    margin-top:3.5%;
+    color:rgb(228, 228, 228);
+}
+.kanrilogout:hover{
+    color:  #D83A39;
+}
+
+
+.yourlife{
+    font-family: 'Noto Serif JP', serif;
+    font-size: 23px;
+    padding-top: 3.5%;
+    margin-left: 1%;  
+   
+}
+.kanriimg{
+    width: 13%;
+}
+.kanriimg img{
+    width: 100%;
+}
+/*フッター*/
+#home_footer{
+    width: 100vw;
+    background-color: rgb(158, 158, 158);
+    position: absolute;
+    bottom: 0;
+    /* opacity: 0.6; */ 
+}
+footer{
+    background-color: rgb(158, 158, 158);
+}
+/* .footer{
+    width: 80%;
+    display: block;
+    margin:0 auto;
+} */
+.footer a{
+    margin: 0 auto;
+    width:18%;
+}
+
+.footer img{
+    margin: 0 auto;
+    width: 15%;
+}
+
+.footer p{
+   text-align: center;
+}
+
+/*ログイン画面*/
+#main_log{
+    width: 80%;
+    height: 100vh;
+    margin: 0 auto;
+}
+.log_font{
+    margin-top: 8%;
+    text-align: center;
+    font-size: 55px;
+    font-family: 'Noto Serif JP', serif;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+#main_log form{
+    background-color: #D83A39;
+    width: 45%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 1rem 1.5rem;
+    border: 1px dotted black;
+    margin-bottom: 5%;
+}
+.logid{
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 3%;
+    color: white;
+}
+#main_log .p{
+    color: white;
+}
+
+.login input{
+    width: 80%;
+    padding:0.4rem 1.5rem;
+    margin-bottom: 10%;
+}
+.newlog {
+   width: 80%;
+   margin: 0 auto;
+   display: flex;
+   flex-direction: column;
+}
+.newlog a{
+    margin-bottom: 2%;
+    text-align: center;
+}
+
+#main_log h2{
+    font-size: 35px;
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 5%;
+   
+}
+.passp{
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 3%;
+}
+#main_log form p{
+    text-align: center;
+    margin-bottom: 1%;
+}
+
+
+
+/* ホーム画面 管理用 */
+#home{
+    height: 100vh;
+    position: relative;
+}
+.menu{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    height: fit-content;
+}
+.menu a{
+    font-size: 1.6rem;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 0.5rem;
+    width: 35%;
+    border: 1px solid black;
+    display: block;
+    
+ } 
+ .menu a:hover {
+    color: #fff;
+    /* background-color: rgb(158, 158, 158); */
+    /* background:rgb(167, 147, 103); */
+    background:#D83A39;
+  }
+/* ホーム画面 契約者・オーナー用 */
+  .menu_2{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    height: fit-content;
+    margin-top: 10%;
+  }
+  .menu_2 a{
+    font-size: 1.6rem;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 0.5rem;
+    width: 40%;
+    border: 1px solid black;
+    display: block;
+ } 
+ .menu_2 a:hover {
+    color: #fff;
+    /* background-color: rgb(158, 158, 158); */
+    /* background:rgb(167, 147, 103); */
+    background:#D83A39;
+  }
+
+  /*完了画面全般*/
+.comp{
+  
+width: 80%;
+margin:0 auto;
+text-align: center;
+}
+.comp h2{
+
+text-align: center;
+font-size: 2rem;
+margin-top: 15%;
+margin-bottom: 5%;
+}
+.comp p{
+text-align: center;
+margin-bottom: 5%;
+}
+.comp a{
+    background-color: white;
+    padding: 0.8rem 1.5rem;
+}
+.comp a:hover{
+    border: 1px solid black;
+}
+
+
+.comp2{
+width: 80%;
+padding-top: 13%;
+margin:0 auto;
+text-align: center;
+}
+.comp2 a{
+background-color: white;
+padding: 0.8rem 1.5rem;
+}
+.comp2 a:hover{
+    border: 1px solid black;
+}
+/*契約者ページ*/
+#main_con{
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 2%;
+}
+#main_con h2{
+ font-size: 35px;
+ text-align: center;
+ margin-bottom: 2%;
+}
+#main_con h3{
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 1.5%;
+    
+}
+#main_con span{
+    color: #D83A39;
+}
+.inout_inner{
+    margin-bottom: 2%;
+}
+.inout_inner p{
+    margin-bottom: 1.5%;
+    margin-bottom: 3%;
+}
+.inout_inner a{
+    background-color: white;
+    padding: 0.5rem 1rem;
+}
+.inphoto_entry{
+    margin-bottom: 8%;
+}
+.inphoto_entry a{
+    background-color: white;
+    padding: 0.5rem 1rem;
+}
+.inphoto_entry p{
+    margin-bottom: 1.5%;
+    margin-bottom: 3%;
+}
+
+#main_con a:hover{
+    border: 1px solid black; 
+}
+.tel_mail{
+    text-align: center;
+}
+.tel_mail_inner{
+    display: flex;
+    /* border: 1px solid black; */
+    margin: 0 auto;
+    margin-bottom: 5%;
+}
+.tel_mail_inner a:hover{
+    color: #D83A39;
+    border: none;
+}
+.tel_mail_inner h4{
+    font-size: 18px;
+    margin-right: 10%;
+    text-align: center;
+    width: 30%;
+    padding-top: 5%;
+    border-bottom: 1px solid black;
+}
+.tel_mail_inner p{
+    width: 60%;
+    padding: 1rem 1.5rem;
+    border: 1px solid black;    
+}
+.photo_entry{
+    margin-bottom: 5%;
+    text-align: center;
+}
+.photo_entry input{
+    width: 60%;
+    padding: 1rem;
+}
+.add3_btn{
+    text-align: center;
+    margin-bottom:3%;
+ }
+ .add3_btn p{
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 2%;
+ }
+ .inphoto_toroku_btn{
+    text-align: center;
+    margin-bottom: 5%;
+}
+.inphoto_toroku_btn input{
+    background-color: white; 
+    padding: 0.3rem 1.5rem;
+    border: 1px outset black;
+}
+.inphoto_toroku_btn input:hover{
+    background:#D83A39;
+    color: white;
+}
+
+/*管理会社専用ページ*/
+#main{
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+#main h2{
+    width: 45%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 35px;
+ }
+ .kensakuform{
+    border: 1px solid black;
+    margin-bottom: 20px;
+}
+.search{
+    width: 80%;
+    padding: 35px 20px 25px 20px;
+    margin: 0 auto;
+    display: flex;
+}
+.search p{
+    font-size: 15px;
+    text-align: center;
+}
+.search_inner{
+    width: 50%;
+   text-align: center;
+}
+.inputkensaku{
+    border: none;
+    width: 95%;
+    height: 80%;
+} 
+.kensaku{
+    width: 150px;
+    height: 30px;
+    margin-left:69%;
+    margin-bottom: 25px;
+}
+.new_mansion{
+    margin-bottom: 50px;
+    width: 20%;
+    text-align: center;
+    margin-left: 80%;
+    border: 1.5px dashed black;
+}
+.mansion_list table{
+    border: 1px solid black;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    margin-bottom: 10%;
+}
+.mansion_list a:hover{
+    /* background:#D83A39;
+    color: white; */
+    color: #D83A39;
+}
+.a:hover{
+    color: #D83A39;
+}
+.mansion_list a:link{
+    /* background:#D83A39;
+    color: white; */
+     /* color:  #05EB64;  */
+}
+.mansion_list a:visited{
+    /* background:#D83A39;
+    color: white; */
+    /* color:  #1a0dab; */
+}
+
+.mansion_list tr,th,td{
+    border: 1px solid black;
+    text-align: center;
+}
+.mansion_list th{
+    font-weight: bold;
+}
+.pagination{
+    display: flex;
+   justify-content: center;
+}
+.page-item{
+    margin-right: 1rem;
+}
+.new p{
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.new_masion_sakusei{
+     text-align: center;
+}
+.new_masion_sakusei input{
+    width: 30%;
+    margin-bottom: 15px;
+    background-color: white; 
+    padding: 0.5rem 1.5rem;
+    border: 1px solid black;
+}
+.taisetu{
+    text-align: center;
+    margin-bottom: 15px;
+    color: rgb(0, 0, 0);
+}
+.mansion_senshu_btn input{
+    margin-top: 10px;
+    padding: 0.6rem 1.5rem;
+ 
+}
+.import{
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 30%;
+}
+.alert{
+    color:rgb(255, 64, 64);
+    font-size: 15px;
+}
+.new span{
+    color:rgb(255, 64, 64);
+}
+.mansion_senshu_btn input:hover{
+    /* background:rgb(171, 149, 103); */
+    background-color: #D83A39;
+    color: white;
+}
+.edit{
+    text-align: center;
+    margin-bottom: 30px;
+ }
+ .edit p{
+     text-align: center;
+     margin-bottom: 10px;
+     font-weight: bold;
+ }
+ .edit span{
+     font-size: 10px;
+ }
+ .edit input{
+    width: 30%;
+     margin-bottom: 15px;
+     background-color: white; 
+     padding: 0.5rem 1.5rem;
+     border: 1px solid black;
+ }
+ .mansion_edit_btn{
+    text-align: center;
+ }
+ .mansion_edit_btn input{
+    width: 30%;
+    margin-top: 10px;
+    padding: 0.6rem 1.5rem;
+    border: 1px solid black;
+ }
+ .mansion_edit_btn input:hover{
+    background:#D83A39;
+    color: white;
+ }
+ .edit span{
+    color:rgb(255, 64, 64);
+ }
+.span{
+    font-size: 15px;
+}
+#owner_shosai{
+    width: 80%;
+    height: 300px;
+    
+}
+.shuzen_p{
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.shuzen_room table{
+    width: 100%;
+    margin-bottom:18%;
+}
+.shuzen_room th{
+    font-weight: bold;
+}
+.shuzen_btn{
+    width: 100%;
+    border:none;
+    height: 100%;
+}
+.shuzen_btn:hover{
+    color:#D83A39;
+
+    margin-bottom: 2px;
+}
+#main h3{
+    font-size: 20px;
+}
+.rireki{
+    width: 100%;
+    margin-bottom: 40px;
+}
+.rireki th{
+    font-weight: bold;
+}
+.inputshuzen{
+    border: none;
+}
+.shozen_footer{
+    width: 100vw;
+    background-color: rgb(158, 158, 158);
+    position: absolute;
+    bottom: 0;
+}
+.report_inner form{
+    text-align: center;
+ }
+ .report_inner span{
+    color:rgb(255, 64, 64);
+ }
+ .report_inner form input{
+     margin-bottom: 20px;
+ }
+ .repo_span{
+    text-align: center;
+    margin-bottom: 3%;
+   
+ }
+ .reportday p{
+     text-align: center;
+     margin-bottom: 10px;
+     font-weight: bold;
+ }
+ .basho p{
+     text-align: center;
+     margin-bottom: 10px;
+     font-weight: bold;
+ }
+ .reportname{
+     font-size: 20px;
+ }
+ .shosai_photo p{
+     text-align: center;
+     margin-bottom: 10px;
+     font-weight: bold;
+ }
+ .shosai_photo{
+     width: 70%;
+     display:flex;
+     flex-flow: column;
+     margin: 0 auto;
+ }
+ .shosai_photo input{
+    width: 50%;
+    margin: 0 auto;
+ }
+ .text1{
+    width: 300px;
+    height: 30px;
+}
+.report_inner textarea{
+    height: 150px;
+    margin-bottom: 20px;
+}
+.report_photo{
+   margin: 0 auto;
+}
+.no{
+    font-size: 10px;
+     text-align: center;
+ }
+#add{
+    width: 100px; 
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+#add_photo{
+    width: 100px; 
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.report_btn{
+    width: 100%;
+    display: flex;
+}
+.report_btn a{
+    margin: 0 auto;
+    height: 40px;
+}
+.report_btn input{
+    width: 30%;
+    margin: 0 auto;
+    border: 1px solid black;
+    background-color: white;
+    padding: 0.5rem 1rem;
+    margin-bottom: 0;
+}
+.report_btn input:hover{
+    background:#D83A39;
+    color: white;
+}
+.view_inner{
+    margin-bottom: 5%;
+    width: 100%;
+}
+.view_inner table{
+    width: 65%;
+    margin: 0 auto;
+}
+.view_inner th{
+    font-weight: bold;
+    padding: 0.3rem;
+}
+.mibun{
+    margin-left: 3%;
+    background-color: white;
+    padding: 0.5rem 1.5rem;
+}
+.mibun:hover{
+   color:#D83A39;
+   
+}
+
+.view_btn{
+    width: 100%;
+    text-align: center;
+}
+.view_henshu{
+    width: 50%;
+    background-color: white; 
+    padding: 0.5rem 1.5rem;
+    border: 1px outset black;
+}
+.view_henshu:hover{
+    background:#D83A39;
+    color: white;
+}
+.shuzen_toroku form{
+    text-align:center;
+}
+
+.shuzen_toroku p{
+    text-align:center;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.shuzen_toroku input{
+    background-color: white; 
+    padding: 0.5rem 1.5rem;
+    border: 1px solid black;
+}
+.shuezn_btn{
+    margin-top: 30px;
+}
+.shuezn_btn a{
+    background-color: white; 
+    padding: 0.7rem 1.5rem;
+}
+.shuezn_btn input{
+    width: 30%;
+    border: 1px outset black;
+    font-size: 15px;
+}
+.shuezn_btn input:hover{
+    background:#D83A39;
+    color: white;
+}
+.shuzen_toroku span{
+    color:rgb(255, 64, 64);
+}
+.photo_inner{
+    width: 100%;
+}
+.in th{
+    width: 100%;
+}
+
+.setumei{
+    text-align: center;
+}
+.telmail{
+    margin-top: 30px;
+    text-align: center;
+}
+.telmail h3{
+    text-align: center;
+    margin-bottom: 15px;
+}
+.telnum1,.telnum2,.mail{
+    margin-bottom: 20px;
+   text-align: center;
+}
+.num{
+    width: 30%;
+    padding: 0.5rem 1.5rem;
+}
+.inner{
+    width: 50%;
+    height: 100px;
+    margin-left: 5%;
+}
+.telmail_btn{
+    text-align: center;
+}
+.telmail_tekiyou{
+    width: 30%;
+    background-color: white; 
+    padding: 0.5rem 1.5rem;
+    border: 1px outset black;
+}
+.telmail_tekiyou:hover{
+    background:#D83A39;
+    color: white;
+}
+.mail{
+    margin-bottom: 50px;
+}
+.reportlist{
+    margin-bottom: 25%;
+}
+.reportlist table{
+    width: 100%;
+    margin-bottom: 20%;
+}
+.photo_inner{
+    margin: 0 auto;
+}
+.view{
+    display: flex;
+  
+}
+.view_photo{
+    margin-right: 5%;
+}
+.view_photo img{
+    margin-bottom: 20px;
+}
+.view_shosai{
+    width: 60%;
+}
+.view_shosai p{
+    
+    height: 200px;
+    margin-bottom: 20px;
+    padding: 3% 3%;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+.day{
+    margin-top: 3%;
+    margin-bottom: 5%;
+}
+
+
+@media screen and (max-width:600px) {
+    footer{
+        display: none;
+    }
+  
+    #main h2{
+        font-size: 25px;
+    }
+    .menu_2{
+        width: 100%;
+        margin-top: 40%;
+    }
+    .menu_2 a{
+        width: 320px;
+       padding:1rem 1.5rem;
+    
+    }
+    .logo_heade{
+        width: 30%;
+    }
+    .kanriimg{
+        width: 28%;
+    }
+    .kanrilogout{
+        padding-top:5%;   
+    }
+    .kensakuform{
+        width: 100%;
+    }
+    .search{
+        width: 100%;
+        display: block;
+    }
+    .search_inner{
+        width: 100%;
+    }
+    .kensaku{
+        margin: 0 auto;
+        margin-left: 35%;
+        margin-bottom: 3%;
+        width: 30%;
+    }
+    .inputkensaku{
+        width: 80%;
+        padding: 0.5rem;
+    }
+    #main_log form{
+        width: 100%;
+
+    }
+    #main_con h2{
+        font-size: 28px;
+        text-align: center;
+        margin-bottom: 2%;
+    }
+    #main_con p{
+        width: 100%;
+       margin-bottom: 5%;
+    }
+    .inout_inner{
+        margin-bottom: 10%;
+    }
+    #main_con span{
+        color: #D83A39;
+    }
+    .photo_entry input{
+        width: 100%;
+    }
+}
