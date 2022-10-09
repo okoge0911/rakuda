@@ -55,3 +55,4 @@ MAMP/MySQL/PHP
 
 データベース名：rakuda
 
+rakuda.sqlをインポートし利用してください。
