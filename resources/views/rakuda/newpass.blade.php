@@ -16,7 +16,7 @@
             @csrf
                 <h2>パスワード再設定</h2>
                 <p>パスワードの再設定をお願いいたします。</p>
-                <input type="password" name="pass" value="" required="パスワードを入力ください。">    
+                <input type="password" name="pass" value="" required="新しいパスワードを入力ください。">    
                 <input type="submit" value="送信"> 
             </form>
        </div>
