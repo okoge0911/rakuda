@@ -23,9 +23,9 @@
                 {{$erro}}
                 @endif
                 <p class="logid">ユーザーID</p>
-                <input type="email" name="logmail" value="{{ old('logmail') }}" placeholder="メールアドレスを入力ください">
+                <input type="email" name="logmail" value="{{ old('logmail') }}" placeholder="メールアドレスを入力ください。">
                 <p class="logid">パスワード</p>
-                <input type="password" name="logpass" value="{{ old('logpass') }}" placeholder="パスワードを入力ください">
+                <input type="password" name="logpass" value="{{ old('logpass') }}" placeholder="パスワードを入力ください。">
                 <input type="submit" value="ログイン">
             </form>
         </div>
